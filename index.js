@@ -36,6 +36,12 @@ app.post('/start', (request, response) => {
 // Handle POST request to '/move'
 app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
+  console.log(request)
+  if(request.turn>3) {
+    const data = {
+    	move: 'right', // one of: ['up','down','left','right']
+    }
+  }
 
   // Response data
   const data = {
